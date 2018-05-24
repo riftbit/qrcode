@@ -4,19 +4,20 @@ This Project is Developing.
 
 # Plan
 
-1. 动态二值化
-2. 提升图片扫描的速度:OK
-3. 修复标线取值: OK
-4. 容错码纠正数据:OK
-5. 数据编码方式
+1. Dynamic binarization
+2. Increase the speed of picture scanning: OK
+3. Fix the score: OK
+4. Fault tolerant code correction data: OK
+5. Data encoding method
     Numbert
     alphanumeric
     8-bit byte: OK
     Kanji
-6. 识别各角度倾斜的二维码
+6. Identify two-dimensional codes that are tilted at each angle
 
 # Example
 
+```
     fi, err := os.Open("qrcode.png")
     if err != nil{
         logger.Println(err.Error())
@@ -29,3 +30,4 @@ This Project is Developing.
         return
     }
     logger.Println(qrmatrix.Content)
+```
